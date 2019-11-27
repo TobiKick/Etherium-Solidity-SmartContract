@@ -1,0 +1,3 @@
+For part one I used Remix.ethereum to upload the contract, compile it and together with the contract's address on Ethereum,
+I was able to directly evoke the contract's functions from the Remix Web Interface.
+(There I could also set the amount of Gwei)
