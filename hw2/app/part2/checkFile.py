@@ -4,7 +4,7 @@ import sys
 if len(sys.argv) > 1:
     fileName = sys.argv[1]
 else:
-    fileName = 'part2.js'
+    fileName = 'app.js'
 
 
 hasher = hashlib.sha256()
@@ -13,6 +13,6 @@ with open(fileName, 'rb') as f:
     result = hasher.hexdigest()
     print(result)
 
-file_out = open("hexdigest.txt","a")
+file_out = open("hexdigest.txt","wt")
 file_out.write(result)
-file_out.close() 
+file_out.close()
